@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="book.js" defer></script>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <p>Track the books you've read!</p>
+    </header>
+    <div class="add-book-container">
+        <button id="show-dialog-button">Add New Book</button>
+        <dialog class="new-book-dialog">
+            <h2>Add new book</h2>
+            <form id="book-form">
+                <input type="text" name="title" id="title" placeholder="Title" required>
+                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="number" name="pages"  id="pages" placeholder="Pages">
+                <label for="read">Have you read it?</label>
+                <div class="radio-row">
+                    <div>
+                        <input type="radio" name="read" id="yes" value="Yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="read" id="no" value="No">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="dialog-button-row">
+                    <button id="close-modal">Close</button>
+                    <button id="add-new-book">Submit</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+    <div class="library-container">
+        <div class="book-row-header">
+            <div class="title">Title</div>
+            <div class="author">Author</div>
+            <div class="pages">Pages</div>
+            <div class="is-read">Read?</div>
+        </div>
+    </div>
+</body>
+</html>
