@@ -102,8 +102,11 @@ input[type=number] {
     border-bottom: 1px solid gray;
 }
 
-form button {
+#book-form .dialog-button-row button {
     width: 80px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .library-container {
